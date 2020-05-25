@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lev2_2-5_js-vertiefung_JSON-Object_HTML-Table</title>
+<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <h1 style="text-align: center; padding-top: 5vw;">Singers</h1>
+    <div class="container">
+        <input type="text" id="filterInput" onkeyup="filter()" placeholder="Search for what you want in the table..">
+        <button onclick="sort('name')">Name</button>
+        <button onclick="sort('country')">Country</button>
+        <button onclick="sort('period_active', 'start')">From</button>
+        <button onclick="sort('period_active', 'end')">To</button>
+        <button onclick="sort('genre')">Genre</button>
+        <p id="outputTable"></p>
+    </div> 
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
